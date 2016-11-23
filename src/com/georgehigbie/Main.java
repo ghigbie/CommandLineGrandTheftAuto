@@ -63,6 +63,7 @@ public class Main {
         System.out.println("");
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("The object of the game is the get 1G, that's $1000.00.");
         System.out.println("Press \"1\" to play the game and be the Pimp Master.");
         int begin = scanner.nextInt();
 
