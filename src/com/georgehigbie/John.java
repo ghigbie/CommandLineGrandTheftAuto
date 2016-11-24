@@ -1,5 +1,7 @@
 package com.georgehigbie;
 
+import java.util.Random;
+
 /**
  * Created by georgehigbie on 11/22/16.
  */
@@ -34,10 +36,9 @@ public class John {
     public void payUp(John john, Player player) {
 
 
-            player.Money += john.money;
-            john.money = 0;
-            System.out.println("dolla dolla bills y'aw, you now have " + player.Money);
-            System.out.println("");
+        player.Money += john.money;
+        john.money = 0;
 
-        }
+        Main.declareResult();
     }
+}

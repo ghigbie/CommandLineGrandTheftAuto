@@ -25,7 +25,7 @@ public class Main {
     }
 
     public static void createPlayer() {
-        String[] nameChoices = {"Silky", "Slick Back", "Feathers", "Daddy Baby", "Booty Bauss"};
+        String[] nameChoices = {"Silky", "Slick Back", "Feathers", "Daddy Baby", "Booty Bauss", "Sir Slaps-a-Lot"};
 
         Random random = new Random();
         int number =  random.nextInt(5);
@@ -87,7 +87,7 @@ public class Main {
         String hoStart = "One of your hos ";
         String copStart = "A cop ";
         String johnStart = "A john ";
-        String stripperStart = "One of your stripper ";
+        String stripperStart = "One of your strippers ";
 
         String refuses = hoStart + "refuses to pay while talking to you on a street corner.";
         String hidesDrugs = hoStart + "is selling drugs on the side and does not give you your cut.";
@@ -184,6 +184,7 @@ public class Main {
                 }
 
                 if(person.equals("cop")){
+                    System.out.println("You shouldn't be slappn' dem cops, yo!");
                     gameOverLoser();
                 }
 
@@ -218,6 +219,30 @@ public class Main {
 
     }
 
+    public static void declareResult(){
+        Random random = new Random();
+        int number = random.nextInt(4);
+
+        switch(number){
+
+            case 1:
+                System.out.println("Dolla dolla bills y'aw!");
+                break;
+            case 2:
+                System.out.println("You busted dat "+ Main.person + "'s ass, yo!");
+                break;
+            case 3:
+                System.out.println("Nobody should mess with " + Main.playerPimp.getPimpName() +".");
+                break;
+            default:
+                System.out.println("Dolla dolla bills y'aw!");
+        }
+        System.out.println("You now have " + playerPimp.Money);
+
+        System.out.println("");
+
+    }
+
     public static void gameOverLoser(){
         System.out.println("You suck as a Pimp!  Game Over");
         System.out.println("Go get a real job!");
@@ -227,7 +252,7 @@ public class Main {
 
     public static void youWin(){
         System.out.println("You are da Pimp Master! You win!");
-        System.out.println("Go buy a nice ring!");
+        System.out.println("Go buy a nice ring! It will help your slapping hand.");
         System.exit(0);
     }
 

@@ -35,8 +35,8 @@ public class Stripper {
 
         player.Money += stripper.money;
         stripper.money = 0;
-        System.out.println("dolla dolla bills y'aw, you now have " + player.Money);
-        System.out.println("");
+
+        Main.declareResult();
 
     }
 

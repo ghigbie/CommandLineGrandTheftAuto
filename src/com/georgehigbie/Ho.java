@@ -1,5 +1,7 @@
 package com.georgehigbie;
 
+import java.util.Random;
+
 /**
  * Created by georgehigbie on 11/22/16.
  */
@@ -8,7 +10,7 @@ public class Ho {
     int health;
     int money;
 
-    public Ho (int Health,int Money){
+    public Ho(int Health, int Money) {
 
         this.health = Health;
         this.money = Money;
@@ -30,17 +32,15 @@ public class Ho {
 //    }
 
 
-    public void payUp(Ho ho, Player player){
+    public void payUp(Ho ho, Player player) {
 
 
-            player.Money += ho.money;
-            ho.money = 0;
-            System.out.println("dolla dolla bills y'aw, you now have " + player.Money);
-            System.out.println("");
+        player.Money += ho.money;
+        ho.money = 0;
 
-        }
-
+        Main.declareResult();
     }
+}
 
 
 

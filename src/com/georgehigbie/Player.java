@@ -25,9 +25,7 @@ public class Player {
 
     }
 
-
-
-
-
-
+    public static String getPimpName() {
+        return PimpName;
+    }
 }
