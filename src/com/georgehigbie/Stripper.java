@@ -1,14 +1,14 @@
 package com.georgehigbie;
 
 /**
- * Created by georgehigbie on 11/22/16.
+ * Created by georgehigbie on 11/24/16.
  */
-public class Ho {
+public class Stripper {
 
     int health;
     int money;
 
-    public Ho (int Health,int Money){
+    public Stripper (int Health,int Money){
 
         this.health = Health;
         this.money = Money;
@@ -30,19 +30,15 @@ public class Ho {
 //    }
 
 
-    public void payUp(Ho ho, Player player){
+    public void payUp(Stripper stripper, Player player){
 
 
-            player.Money += ho.money;
-            ho.money = 0;
-            System.out.println("dolla dolla bills y'aw, you now have " + player.Money);
-            System.out.println("");
-
-        }
+        player.Money += stripper.money;
+        stripper.money = 0;
+        System.out.println("dolla dolla bills y'aw, you now have " + player.Money);
+        System.out.println("");
 
     }
 
-
-
-
+}
 

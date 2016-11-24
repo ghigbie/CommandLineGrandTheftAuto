@@ -12,6 +12,7 @@ public class Cop {
         System.out.println("you bribed the cop and have to pay $250.");
         player.Money-=250;
         System.out.println("you have " + player.Money + " left");
+        System.out.println("");
     }
 
 

@@ -82,10 +82,12 @@ public class Main {
         Ho ho = new Ho(50, 50);
         Cop cop = new Cop();
         John john = new John(50, 100);
+        Stripper stripper = new Stripper(50, 50);
 
         String hoStart = "One of your hos ";
         String copStart = "A cop ";
         String johnStart = "A john ";
+        String stripperStart = "One of your stripper ";
 
         String refuses = hoStart + "refuses to pay while talking to you on a street corner.";
         String hidesDrugs = hoStart + "is selling drugs on the side and does not give you your cut.";
@@ -102,15 +104,21 @@ public class Main {
         String johnNotPayAll = johnStart + "refuses to pay the entire bill";
         String johnSaving = johnStart + "refuses";
 
-        String stripClub = "Your strip club is underperforming.";
-        String std = hoStart + "has an STD. You have to take her to a clinic.";
+        String stripNoWork = stripperStart + "does not want to work.";
+        String stripHiding = stripperStart + "is hiding from you and refuses to work";
+        String stripHidingTips = stripperStart + "is hiding some of her tip money";
+        String stripWorking = stripperStart + "is working on the side for extra and does not fork up her share.";
+
+//        String std = hoStart + "has an STD. You have to take her to a clinic.";
+//        String
 
         String response = name + ", what do you want to do? (Please type a letter.)";
 
-        String [] hoSituations = {refuses, hidesDrugs, wontWork, hiding, late, smoking, std};
+        String [] hoSituations = {refuses, hidesDrugs, wontWork, hiding, late, smoking};
         String [] copSituations = {copBribe, copBusts, copCollection};
         String [] johnSituations = {johnRefuses, johnNotPayAll, johnSaving};
-        String [] otherSituations = {stripClub, std};
+        String [] stripperSituations = {stripNoWork, stripHiding, stripHidingTips};
+        String [] negativeSituations = {};
 
         Random random = new Random();
         int number =  random.nextInt(5);
@@ -118,7 +126,7 @@ public class Main {
         boolean isHo = false;
         boolean isJohn = false;
         boolean isCop = false;
-        boolean isSituation = false;
+        boolean isStripper = false;
 
         switch (number) {
 
@@ -141,9 +149,9 @@ public class Main {
                 break;
 
             case 3:
-                situations = otherSituations;
-                isSituation = true;
-                person = "ho";
+                situations = stripperSituations;
+                isStripper = true;
+                person = "stripper";
                 break;
 
             default:
@@ -183,20 +191,25 @@ public class Main {
                     john.payUp(john, playerPimp);
 
                 }
-
+                if(person.equals("stripper")){
+                    stripper.payUp(stripper, playerPimp);
+                }
                 startSituations();
                 break;
+
             case 2:
                 if(person.equals("cop")){
                     startSituations();
                 }
                 else {gameOverLoser();}
                 break;
+
             case 3:
                 playerPimp.Money -= 200;
                 System.out.println("You now have " + playerPimp.Money);
                 startSituations();
                 break;
+
             case 4:
                 startSituations();
                 break;
