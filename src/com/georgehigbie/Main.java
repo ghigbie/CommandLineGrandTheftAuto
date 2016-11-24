@@ -117,7 +117,7 @@ public class Main {
         String [] hoSituations = {refuses, hidesDrugs, wontWork, hiding, late, smoking};
         String [] copSituations = {copBribe, copBusts, copCollection};
         String [] johnSituations = {johnRefuses, johnNotPayAll, johnSaving};
-        String [] stripperSituations = {stripNoWork, stripHiding, stripHidingTips};
+        String [] stripperSituations = {stripNoWork, stripHiding, stripHidingTips, stripWorking};
 
 
         Random random = new Random();
@@ -212,8 +212,7 @@ public class Main {
                 break;
 
             case 3:
-                playerPimp.Money -= 200;
-                System.out.println("You now have " + playerPimp.Money);
+                cop.bribe(playerPimp);
                 startSituations();
                 break;
 
