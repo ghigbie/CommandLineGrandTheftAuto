@@ -118,10 +118,10 @@ public class Main {
         String [] copSituations = {copBribe, copBusts, copCollection};
         String [] johnSituations = {johnRefuses, johnNotPayAll, johnSaving};
         String [] stripperSituations = {stripNoWork, stripHiding, stripHidingTips};
-        String [] negativeSituations = {};
+
 
         Random random = new Random();
-        int number =  random.nextInt(5);
+        int number =  random.nextInt(6);
         String[] situations;
         boolean isHo = false;
         boolean isJohn = false;
@@ -152,6 +152,12 @@ public class Main {
                 situations = stripperSituations;
                 isStripper = true;
                 person = "stripper";
+                break;
+
+            case 4:
+                situations = hoSituations;
+                isHo = true;
+                person = "ho";
                 break;
 
             default:
