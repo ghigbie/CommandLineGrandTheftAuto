@@ -112,7 +112,7 @@ public class Main {
 //        String std = hoStart + "has an STD. You have to take her to a clinic.";
 //        String
 
-        String response = name + ", what do you want to do? (Please type a letter.)";
+        String response = name + ", what do you want to do? (Please type a number.)";
 
         String [] hoSituations = {refuses, hidesDrugs, wontWork, hiding, late, smoking};
         String [] copSituations = {copBribe, copBusts, copCollection};
