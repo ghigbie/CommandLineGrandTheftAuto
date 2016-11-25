@@ -83,11 +83,13 @@ public class Main {
         Cop cop = new Cop();
         John john = new John(50, 100);
         Stripper stripper = new Stripper(50, 50);
+        Bum bum = new Bum(50, 2);
 
         String hoStart = "One of your hos ";
         String copStart = "A cop ";
         String johnStart = "A john ";
         String stripperStart = "One of your strippers ";
+        String bumStart = "A bum ";
 
         String refuses = hoStart + "refuses to pay while talking to you on a street corner.";
         String hidesDrugs = hoStart + "is selling drugs on the side and does not give you your cut.";
@@ -109,6 +111,11 @@ public class Main {
         String stripHidingTips = stripperStart + "is hiding some of her tip money";
         String stripWorking = stripperStart + "is working on the side for extra and does not fork up her share.";
 
+        String bumSmelling = bumStart + "approaches you smelling like gabarge.";
+        String bumBooze = bumStart + "comes over to you and asks for money to buy booze.";
+        String bumWeed = bumStart + "approaches you and asks for money to buy weed.";
+        String bumMoney = bumStart + "and demands money.";
+
 //        String std = hoStart + "has an STD. You have to take her to a clinic.";
 //        String
 
@@ -118,15 +125,17 @@ public class Main {
         String [] copSituations = {copBribe, copBusts, copCollection};
         String [] johnSituations = {johnRefuses, johnNotPayAll, johnSaving};
         String [] stripperSituations = {stripNoWork, stripHiding, stripHidingTips, stripWorking};
+        String [] bumSituation = {bumSmelling, bumBooze, bumWeed, bumMoney};
 
 
         Random random = new Random();
-        int number =  random.nextInt(6);
+        int number =  random.nextInt(7);
         String[] situations;
         boolean isHo = false;
         boolean isJohn = false;
         boolean isCop = false;
         boolean isStripper = false;
+        boolean isBum = false;
 
         switch (number) {
 
@@ -158,6 +167,12 @@ public class Main {
                 situations = hoSituations;
                 isHo = true;
                 person = "ho";
+                break;
+
+            case 5:
+                situations = bumSituation;
+                isBum = true;
+                person = "bum";
                 break;
 
             default:
