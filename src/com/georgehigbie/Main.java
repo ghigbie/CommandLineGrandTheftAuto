@@ -84,12 +84,14 @@ public class Main {
         John john = new John(50, 100);
         Stripper stripper = new Stripper(50, 50);
         Bum bum = new Bum(50, 2);
+        Beeach beeach = new Beeach(75, 50);
 
         String hoStart = "One of your hos ";
         String copStart = "A cop ";
         String johnStart = "A john ";
         String stripperStart = "One of your strippers ";
         String bumStart = "A bum ";
+        String beeachStart = "One of your bee-aches ";
 
         String refuses = hoStart + "refuses to pay while talking to you on a street corner.";
         String hidesDrugs = hoStart + "is selling drugs on the side and does not give you your cut.";
@@ -116,6 +118,13 @@ public class Main {
         String bumWeed = bumStart + "approaches you and asks for money to buy weed.";
         String bumMoney = bumStart + "and demands money.";
 
+        String beeachRefuses = beeachStart + "refuses to pay while talking to you on a street corner.";
+        String beeachDrugs = beeachStart + "is selling drugs on the side and does not give you your cut.";
+        String beeachWontWork=  beeachStart + "wont get out and work";
+        String beeachHiding = beeachStart + "is hiding in a corner and wont work";
+        String beeachLate = beeachStart + "is late for work";
+        String beeachSmoking = beeachStart + "is smoking her product";
+
 //        String std = hoStart + "has an STD. You have to take her to a clinic.";
 //        String
 
@@ -125,17 +134,20 @@ public class Main {
         String [] copSituations = {copBribe, copBusts, copCollection};
         String [] johnSituations = {johnRefuses, johnNotPayAll, johnSaving};
         String [] stripperSituations = {stripNoWork, stripHiding, stripHidingTips, stripWorking};
-        String [] bumSituation = {bumSmelling, bumBooze, bumWeed, bumMoney};
+        String [] bumSituations = {bumSmelling, bumBooze, bumWeed, bumMoney};
+        String [] beeachSituations = {beeachRefuses, beeachDrugs, beeachWontWork, beeachHiding, beeachLate, beeachSmoking};
 
 
         Random random = new Random();
         int number =  random.nextInt(7);
         String[] situations;
+
         boolean isHo = false;
         boolean isJohn = false;
         boolean isCop = false;
         boolean isStripper = false;
         boolean isBum = false;
+        boolean isBeeach = false;
 
         switch (number) {
 
@@ -170,10 +182,15 @@ public class Main {
                 break;
 
             case 5:
-                situations = bumSituation;
+                situations = bumSituations;
                 isBum = true;
                 person = "bum";
                 break;
+
+            case 6:
+                situations = beeachSituations;
+                isBeeach = true;
+                person = "bee-Ach";
 
             default:
                 situations = hoSituations;
@@ -189,7 +206,8 @@ public class Main {
         System.out.println(situation);
         System.out.println(response);
 
-        String promptPlayer = "1) Slap dat " + person + ".   2) Run Away from dat " + person + ".   3) Give dat " + person + " money" + ".   4) Let it Slide." ;
+        String promptPlayer = "1) Slap dat " + person + ".   2) Run Away from dat " + person + ".   3) Give dat " + person + " money" + ".   " +
+                "4) Slap dat " + person + " with your ring hand.   5) Let it Slide." ;
         System.out.println(promptPlayer);
 
 
@@ -216,6 +234,14 @@ public class Main {
                 if(person.equals("stripper")){
                     stripper.payUp(stripper, playerPimp);
                 }
+
+                if(person.equals("bum")){
+                    bum.payUp(bum, playerPimp);
+                }
+                if(person.equals("beeach")){
+                    beeach.payUp(beeach, playerPimp);
+                }
+
                 startSituations();
                 break;
 
@@ -232,6 +258,36 @@ public class Main {
                 break;
 
             case 4:
+                System.out.println("Da rings of " + name + " are shinny when slapping across someone's face!");
+
+                if(person.equals("ho")){
+                    ho.payUp(ho, playerPimp);
+                }
+
+                if(person.equals("cop")){
+                    System.out.println("You shouldn't be slappn' dem cops, yo!");
+                    gameOverLoser();
+                }
+
+                if(person.equals("john")){
+                    john.payUp(john, playerPimp);
+
+                }
+                if(person.equals("stripper")){
+                    stripper.payUp(stripper, playerPimp);
+                }
+
+                if(person.equals("bum")){
+                    bum.payUp(bum, playerPimp);
+                }
+                if(person.equals("beeach")){
+                    beeach.payUp(beeach, playerPimp);
+                }
+
+                startSituations();
+                break;
+
+            case 5:
                 startSituations();
                 break;
 
@@ -241,17 +297,17 @@ public class Main {
 
     public static void declareResult(){
         Random random = new Random();
-        int number = random.nextInt(4);
+        int number = random.nextInt(3);
 
         switch(number){
 
-            case 1:
+            case 0:
                 System.out.println("Dolla dolla bills y'aw!");
                 break;
-            case 2:
+            case 1:
                 System.out.println("You busted dat "+ Main.person + "'s ass, yo!");
                 break;
-            case 3:
+            case 2:
                 System.out.println("Nobody should mess with " + Main.playerPimp.getPimpName() +".");
                 break;
             default:

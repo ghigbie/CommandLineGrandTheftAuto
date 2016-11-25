@@ -16,31 +16,31 @@ public class Bum {
         this.money = Money;
     }
 
-    public void payUp(John john, Player player) {
+    public void payUp(Bum bum, Player player) {
 
         Random random = new Random();
-        int number = random.nextInt(3);
+        int number = random.nextInt(2);
 
         switch (number){
-            case 1:
-                john.money += 50;
-                System.out.println("This john won't pay.");
+            case 0:
+                bum.money += 2;
+                System.out.println("Ain't got nuttin' for money");
                 System.out.println("You slap his sorry ass again and get more money.");
 
-                player.Money += john.money;
-                john.money = 0;
+                player.Money += bum.money;
+                bum.money = 0;
                 break;
 
 
-            case 2:
+            case 1:
 
-                player.Money += john.money;
-                john.money = 0;
+                player.Money += bum.money;
+                bum.money = 0;
                 break;
 
             default:
-                player.Money += john.money;
-                john.money = 0;
+                player.Money += bum.money;
+                bum.money = 0;
 
         }
         Main.declareResult();
