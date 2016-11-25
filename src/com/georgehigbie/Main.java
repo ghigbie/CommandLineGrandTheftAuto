@@ -25,7 +25,7 @@ public class Main {
     }
 
     public static void createPlayer() {
-        String[] nameChoices = {"Silky", "Slick Back", "Feathers", "Daddy Baby", "Booty Bauss", "Sir Slaps-a-Lot"};
+        String[] nameChoices = {"Silky", "Slick Back", "Feathers", "Daddy Baby", "Booty Bauss", "Sir Slaps-a-Lot", "Slappy Feather"};
 
         Random random = new Random();
         int number =  random.nextInt(5);
@@ -313,7 +313,7 @@ public class Main {
             default:
                 System.out.println("Dolla dolla bills y'aw!");
         }
-        System.out.println("You now have " + playerPimp.Money);
+        System.out.println("You now have $" + playerPimp.Money + ".");
 
         System.out.println("");
 
