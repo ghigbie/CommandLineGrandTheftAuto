@@ -52,16 +52,15 @@ public class Ho {
 
             case 2:
 
-                player.Money += ho.money;
-                ho.money = 0;
-
                 break;
 
             default:
-                player.Money += ho.money;
-                ho.money = 0;
+
 
         }
+
+        player.Money += ho.money;
+        ho.money = 0;
 
 
         Main.declareResult();

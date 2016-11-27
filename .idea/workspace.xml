@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa9e4e64-4054-475b-968d-f1b6cf59ca8a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PimpSlapper1/com/georgehigbie/Ho.class" afterPath="$PROJECT_DIR$/out/production/PimpSlapper1/com/georgehigbie/Ho.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PimpSlapper1/com/georgehigbie/Main.class" afterPath="$PROJECT_DIR$/out/production/PimpSlapper1/com/georgehigbie/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PimpSlapper1/com/georgehigbie/Stripper.class" afterPath="$PROJECT_DIR$/out/production/PimpSlapper1/com/georgehigbie/Stripper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/georgehigbie/Ho.java" afterPath="$PROJECT_DIR$/src/com/georgehigbie/Ho.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/georgehigbie/John.java" afterPath="$PROJECT_DIR$/src/com/georgehigbie/John.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/georgehigbie/Main.java" afterPath="$PROJECT_DIR$/src/com/georgehigbie/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/georgehigbie/Stripper.java" afterPath="$PROJECT_DIR$/src/com/georgehigbie/Stripper.java" />
     </list>
     <ignored path="PimpSlapper1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +34,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/georgehigbie/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4215">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="3840">
+              <caret line="264" column="40" selection-start-line="264" selection-start-column="40" selection-end-line="264" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,8 +56,8 @@
       <file leaf-file-name="Stripper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/georgehigbie/Stripper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            <state relative-caret-position="240">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,8 +66,8 @@
       <file leaf-file-name="Ho.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/georgehigbie/Ho.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
+            <state relative-caret-position="387">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -101,8 +108,8 @@
       <file leaf-file-name="John.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/georgehigbie/John.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,13 +140,13 @@
         <option value="$PROJECT_DIR$/src/com/georgehigbie/Cane.java" />
         <option value="$PROJECT_DIR$/src/com/georgehigbie/Ring.java" />
         <option value="$PROJECT_DIR$/src/com/georgehigbie/Player.java" />
-        <option value="$PROJECT_DIR$/src/com/georgehigbie/Ho.java" />
-        <option value="$PROJECT_DIR$/src/com/georgehigbie/Stripper.java" />
-        <option value="$PROJECT_DIR$/src/com/georgehigbie/John.java" />
         <option value="$PROJECT_DIR$/src/com/georgehigbie/Cop.java" />
         <option value="$PROJECT_DIR$/src/com/georgehigbie/Bum.java" />
         <option value="$PROJECT_DIR$/src/com/georgehigbie/Beeach.java" />
         <option value="$PROJECT_DIR$/src/com/georgehigbie/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/georgehigbie/Ho.java" />
+        <option value="$PROJECT_DIR$/src/com/georgehigbie/Stripper.java" />
+        <option value="$PROJECT_DIR$/src/com/georgehigbie/John.java" />
       </list>
     </option>
   </component>
@@ -486,7 +493,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1400" height="807" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -496,8 +503,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24796748" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37669376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24796748" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37669376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26785713" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -598,22 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/georgehigbie/Stripper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/georgehigbie/Ho.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/georgehigbie/Beeach.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
@@ -640,10 +631,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/georgehigbie/Ho.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/georgehigbie/Stripper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/georgehigbie/John.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -652,8 +659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/georgehigbie/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4215">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="3840">
+          <caret line="264" column="40" selection-start-line="264" selection-start-column="40" selection-end-line="264" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

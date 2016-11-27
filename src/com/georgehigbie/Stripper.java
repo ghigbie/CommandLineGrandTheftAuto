@@ -52,17 +52,16 @@ public class Stripper {
 
             case 2:
 
-                player.Money += stripper.money;
-                stripper.money = 0;
 
                 break;
 
             default:
-                player.Money += stripper.money;
-                stripper.money = 0;
+
 
         }
 
+        player.Money += stripper.money;
+        stripper.money = 0;
 
 
         Main.declareResult();

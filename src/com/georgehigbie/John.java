@@ -47,22 +47,22 @@ public class John {
                 System.out.println("This john won't pay.");
                 System.out.println("You slap his sorry ass again and get more money.");
 
-                player.Money += john.money;
-                john.money = 0;
+
                 break;
 
 
             case 2:
 
-                player.Money += john.money;
-                john.money = 0;
                 break;
 
             default:
-                player.Money += john.money;
-                john.money = 0;
+
 
         }
+
+        player.Money += john.money;
+        john.money = 0;
+
         Main.declareResult();
 
     }

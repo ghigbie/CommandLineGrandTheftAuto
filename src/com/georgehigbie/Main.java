@@ -1,5 +1,6 @@
 package com.georgehigbie;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 
 import java.util.Random;
@@ -253,7 +254,18 @@ public class Main {
                 break;
 
             case 3:
-                cop.bribe(playerPimp);
+                if(person.equals("cop")){
+                    cop.bribe(playerPimp);
+                    break;
+                }
+                else {
+                    playerPimp.Money-=50;
+                    System.out.println("You just wasted $50 on a " + person + ".");
+                    System.out.println("Dat ain't very pimp-like, " + name + "!");
+                    System.out.println("");
+                }
+
+
                 startSituations();
                 break;
 
