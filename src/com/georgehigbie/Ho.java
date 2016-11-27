@@ -35,8 +35,34 @@ public class Ho {
     public void payUp(Ho ho, Player player) {
 
 
-        player.Money += ho.money;
-        ho.money = 0;
+        Random random = new Random();
+        int number = random.nextInt(3);
+
+
+
+        switch (number){
+            case 1:
+                ho.money += 25;
+                System.out.println("This ho won't pay up.");
+                System.out.println("You slap her sorry ass again and get more money.");
+                System.out.println("She's been holding out on you! But you taught her a lesson.");
+
+                break;
+
+
+            case 2:
+
+                player.Money += ho.money;
+                ho.money = 0;
+
+                break;
+
+            default:
+                player.Money += ho.money;
+                ho.money = 0;
+
+        }
+
 
         Main.declareResult();
     }

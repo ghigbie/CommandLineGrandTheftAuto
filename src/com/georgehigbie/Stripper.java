@@ -1,5 +1,7 @@
 package com.georgehigbie;
 
+import java.util.Random;
+
 /**
  * Created by georgehigbie on 11/24/16.
  */
@@ -33,8 +35,35 @@ public class Stripper {
     public void payUp(Stripper stripper, Player player){
 
 
-        player.Money += stripper.money;
-        stripper.money = 0;
+        Random random = new Random();
+        int number = random.nextInt(3);
+
+
+
+        switch (number){
+            case 1:
+                stripper.money += 50;
+                System.out.println("This stripper won't pay up.");
+                System.out.println("You slap her sorry ass again and get more money.");
+                System.out.println("She's been holding out on you! But you taught her a lesson.");
+
+                break;
+
+
+            case 2:
+
+                player.Money += stripper.money;
+                stripper.money = 0;
+
+                break;
+
+            default:
+                player.Money += stripper.money;
+                stripper.money = 0;
+
+        }
+
+
 
         Main.declareResult();
 
