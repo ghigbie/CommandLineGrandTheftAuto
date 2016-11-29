@@ -12,6 +12,7 @@ public class Cop {
         player.Money-=100;
         System.out.println("You have " + player.Money + " left. Sometimes da pimp'n life is hard.");
         System.out.println("");
+
     }
 
 

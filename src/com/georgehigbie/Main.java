@@ -26,10 +26,10 @@ public class Main {
     }
 
     public static void createPlayer() {
-        String[] nameChoices = {"Silky", "Slick Back", "Feathers", "Daddy Baby", "Booty Bauss", "Sir Slaps-a-Lot", "Slappy Feather"};
+        String[] nameChoices = {"Silky", "Slick Back", "Feathers", "Daddy Baby", "Booty Bauss", "Sir Slaps-a-Lot", "Slappy Feather", "King Pimp"};
 
         Random random = new Random();
-        int number =  random.nextInt(5);
+        int number =  random.nextInt(8);
 
         switch (number) {
 
@@ -51,6 +51,18 @@ public class Main {
 
             case 4:
                 name = nameChoices[4];
+                break;
+
+            case 5:
+                name = nameChoices[5];
+                break;
+
+            case 6:
+                name = nameChoices[6];
+                break;
+
+            case 7:
+                name = nameChoices[7];
                 break;
 
             default:
@@ -256,7 +268,6 @@ public class Main {
             case 3:
                 if(person.equals("cop")){
                     cop.bribe(playerPimp);
-                    break;
                 }
                 else {
                     playerPimp.Money-=50;
