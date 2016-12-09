@@ -341,7 +341,7 @@ public class Main {
         System.out.println("");
 
     }
-
+    //this method ends the game and insults the player
     public static void gameOverLoser(){
         System.out.println("You suck as a Pimp!  Game Over");
         System.out.println("Go get a real job!");
@@ -349,7 +349,7 @@ public class Main {
         System.exit(0);
 
     }
-
+    //this method calls lets the player win the game
     public static void youWin(){
         System.out.println("You are da Pimp Master! You win!");
         System.out.println("Go buy a nice ring! It will help your slapping hand.");
