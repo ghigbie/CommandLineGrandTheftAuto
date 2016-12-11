@@ -69,7 +69,7 @@ public class Main {
                 name = nameChoices[0];
         }
 
-
+        //this creates a new player
         Player playerPimp = new Player(500, 20, name);
         String nameIntro = "Your name is " + name;
         System.out.println(nameIntro + " ");
