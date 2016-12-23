@@ -344,6 +344,7 @@ public class Main {
     //this method ends the game and insults the player
     public static void gameOverLoser(){
         System.out.println("You suck as a Pimp!  Game Over");
+        System.out.println("Don't hate da playa. Hate da game...");
         System.out.println("Go get a real job!");
         System.out.println("I hear that McDonald's is hiring. Would yo like fries with dat, bee-ach!");
         System.exit(0);
