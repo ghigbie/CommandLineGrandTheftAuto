@@ -343,16 +343,16 @@ public class Main {
     }
     //this method ends the game and insults the player
     public static void gameOverLoser(){
-        System.out.println("You suck as a Pimp!  Game Over");
+        System.out.println("You suck as a Pimp!  Game Over Bee-ach!");
         System.out.println("Don't hate da playa. Hate da game...");
         System.out.println("Go get a real job!");
-        System.out.println("I hear that McDonald's is hiring. Would yo like fries with dat, bee-ach!");
+        System.out.println("I hear that McDonald's is hiring. Would yo like fries with dat bee-ach?");
         System.exit(0);
 
     }
     //this method calls lets the player win the game
     public static void youWin(){
-        System.out.println("You are da Pimp Master! You win!");
+        System.out.println("You are da Pimp Master! You win da game!");
         System.out.println("Go buy a nice ring! It will help your slapping hand.");
         System.exit(0);
     }
